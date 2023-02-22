@@ -20,7 +20,6 @@ function App() {
   ]);
   const [name, setName] = useState(" ");
   const [searchText, setSearchText] = useState("");
-
   const addItem = () => {
     setPhoneBook([...phoneBook, { name: name }]);
     setName("");
@@ -55,7 +54,7 @@ function App() {
           </div>
           <div className="col-4">
             <button className="btn btn-primary" onClick={addItem}>
-              Thêm
+              Add
             </button>
           </div>
           <div className="row mt-4">
@@ -67,6 +66,7 @@ function App() {
         </div>
         </div>
     </div>
+
   );
 }
 export default App;
